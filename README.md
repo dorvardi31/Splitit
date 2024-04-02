@@ -24,19 +24,21 @@ cd Splitit
 ```
 ###Executing program
 Restore dependencies, build the solution, and run the project:
+```bash
 dotnet restore
 dotnet build
 dotnet run
-
+```
 
 API Reference
 ###Get Actors
 GET /api/actors
 Request:
+```bash
 curl -X 'GET' \
   'https://localhost:7056/api/Actors?name=Tom&pageNumber=1&pageSize=10' \
   -H 'accept: text/plain'
-
+```
 Response:
 
 {
@@ -66,11 +68,11 @@ Response:
 
 ###GET /actors/{id}
 Request:
-
+```bash
 curl -X 'GET' \
   'https://localhost:7056/api/Actors/111' \
   -H 'accept: text/plain'
-
+```
 Response:
 
 {
@@ -91,6 +93,7 @@ Response:
 
 ###POST /actors
 Request:
+```bash
 curl -X 'POST' \
   'https://localhost:7056/api/Actors' \
   -H 'accept: text/plain' \
@@ -103,7 +106,7 @@ curl -X 'POST' \
   "description": "test",
   "source": "SPLITIT"
 }'
-
+```
 Response:
 
 {
@@ -122,6 +125,7 @@ Response:
 
 ###PUT /actors/{id}
 Request:
+```bash
 curl -X 'PUT' \
   'https://localhost:7056/api/Actors/1' \
   -H 'accept: text/plain' \
@@ -134,7 +138,7 @@ curl -X 'PUT' \
   "description": "no history",
   "source": "IMDB"
 }'
-
+```
 Response:
 
 {
@@ -152,10 +156,11 @@ Response:
 }
 ###DELETE /actors/{id}
 Request:
+```bash
 curl -X 'DELETE' \
   'https://localhost:7056/api/Actors/1' \
   -H 'accept: */*'
-
+```
 Response:
 
 {
