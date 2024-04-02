@@ -21,7 +21,7 @@ Clone the repository:
 ```bash
 git clone [https://github.com/yourusername/yourprojectname.git](https://github.com/dorvardi31/Splitit.git)
 cd Splitit
-
+```
 ###Executing program
 Restore dependencies, build the solution, and run the project:
 dotnet restore
