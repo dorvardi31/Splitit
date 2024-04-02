@@ -22,7 +22,7 @@ Clone the repository:
 git clone [https://github.com/yourusername/yourprojectname.git](https://github.com/dorvardi31/Splitit.git)
 cd Splitit
 ```
-###Executing program
+### Executing program
 Restore dependencies, build the solution, and run the project:
 ```bash
 dotnet restore
@@ -31,7 +31,7 @@ dotnet run
 ```
 
 API Reference
-###Get Actors
+### Get Actors
 GET /api/actors
 Request:
 ```bash
@@ -66,7 +66,7 @@ Response:
   "errors": null
 }
 
-###GET /actors/{id}
+### GET /actors/{id}
 Request:
 ```bash
 curl -X 'GET' \
@@ -91,7 +91,7 @@ Response:
 
 
 
-###POST /actors
+### POST /actors
 Request:
 ```bash
 curl -X 'POST' \
@@ -123,7 +123,7 @@ Response:
   "errors": null
 }
 
-###PUT /actors/{id}
+### PUT /actors/{id}
 Request:
 ```bash
 curl -X 'PUT' \
@@ -154,7 +154,7 @@ Response:
   },
   "errors": null
 }
-###DELETE /actors/{id}
+### DELETE /actors/{id}
 Request:
 ```bash
 curl -X 'DELETE' \
@@ -170,5 +170,5 @@ Response:
   "errors": null
 }
 
-##Authors
-Dor Vardi
+## Authors
+  Dor Vardi
